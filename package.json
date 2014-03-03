@@ -1,8 +1,8 @@
 {
   "name": "language-cakephp",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
-  "description": "A short description of your package",
+  "description": "A package for use with CakePHP in GitHubs Atom editor. Initially converted from the CakePHP TextMate bundle",
   "repository": "https://github.com/atom/language-cakephp",
   "license": "MIT",
   "engines": {
