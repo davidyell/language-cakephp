@@ -1,0 +1,125 @@
+'fileTypes': [
+  'ctp'
+  'php'
+]
+'foldingStartMarker': '(/\\*|\\{\\s*$|<<<HTML|\\(\\s*$)'
+'foldingStopMarker': '(\\*/|^\\s*\\}|^HTML;|\\s*\\);)'
+'name': 'CakePHP'
+'patterns': [
+  {
+    'include': 'source.php'
+  }
+  {
+    'begin': '\\{'
+    'end': '\\?>'
+    'name': 'class.controller.cake'
+  }
+  {
+    'match': '\\$this->'
+    'name': 'keyword.this.class.cake'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'keyword.method.class.cake'
+    'match': '($this->)([a-zA-Z]+)(\\()\\b'
+    'name': 'support.method.class.cake'
+  }
+  {
+    'match': '\\$this->[a-zA-Z]*'
+    'name': 'support.member.class.cake'
+  }
+  {
+    'match': '\\b(bind|unbind|hasField|field|read|save|saveField|delete|exists|hasAny|find|query|validates|invalidate|invalidFields|isForeignKey|getID|getLastInsertID|getInsertID|getNumRows|getAffectedRows|setDatasource|beforeFind|afterFind|beforeSave|afterSave|beforeDelete|afterDelete)\\b'
+    'name': 'support.function.model.cake'
+  }
+  {
+    'match': '\\b(hasOne|belongsTo|hasMany|hasAndBelongsToMany|cacheQueries|data|displayField|id|logTransactions|name|primaryKey|recursive|useDbConfig|useTable|validate|validationErrors)\\b'
+    'name': 'support.property.model.cake'
+  }
+  {
+    'match': '\\b(redirect|set|setAction|validate|validateErrors|render|referer|flash|postCondtions|beforeFilter|beforeRender|afterFilter)\\b'
+    'name': 'support.function.controller.cake'
+  }
+  {
+    'match': '\\b(name|action|autoLayout|autoRender|base|beforeFilter|cacheAction|components|data|helpers|here|layout|output|pageTitle|params|persistModel|plugin|uses|view|viewPath|webroot)\\b'
+    'name': 'support.property.controller.cake'
+  }
+  {
+    'match': '\\b(APP|APP_DIR|APP_PATH|CACHE|CAKE|CAKE_CORE_INCLUDE_PATH|COMPONENTS|CONFIGS|CONTROLLER_TESTS|CONTROLLERS|CORE_PATH|CSS|DS|ELEMENTS|HELPER_TESTS|HELPERS|INFLECTIONS|JS|LAYOUTS|LIB_TESTS|LIBS|LOGS|MODEL_TESTS|MODELS|MODULES|MONTH|PEAR|ROOT|SCRIPTS|SECOND|TESTS|TMP|VENDORS|VIEWS|WEBROOT_DIR|WEBSERVICES|WWW_ROOT)\\b'
+    'name': 'support.constant.core.cake'
+  }
+  {
+    'match': '\\b(setId|findBySql)\\b'
+    'name': 'invalid.deprecated.model.cake'
+  }
+  {
+    'match': '\\b(areaTag|charsetTag|checkboxTag|contentTag|cssTag|fileTag|formTag|guiListTag|hiddenTag|imageTag|inputTag|javascriptIncludeTag|javascriptTag|linkEmail|linkOut|linkTo|parseHtmlOptions|passwordTag|radioTags|submitTag|tag|urlFor|isFieldError|labelTag|divTag|pTag|generate(Input|Checkbox|Area|Select|Submit)Div)\\b'
+    'name': 'invalid.deprecated.helper.html.cake'
+  }
+  {
+    'match': '\\b(linkToRemote)\\b'
+    'name': 'invalid.deprecated.helper.ajax.cake'
+  }
+  {
+    'match': '\\b(generate(Date|DateTime|Fields))\\b'
+    'name': 'support.function.helper.cake'
+  }
+  {
+    'match': '\\b(addCrumb|charset|url|link|submit|password|textarea|checkbox|css|file|getCrumbs|hidden|image|input|radio|tableHeaders|tableCells|validate|tagIsValid|validateErrors|tagErrorMsg|selectTag|(day|year|month|hour|minute|meridian|date)OptionTag)\\b'
+    'name': 'support.function.helper.html.cake'
+  }
+  {
+    'match': '\\b(link|remoteFunction|remoteTimer|form|submit|observe(Field|Form)|autoComplete|drag|drop|dropRemote|slider|editor|sortable|)\\b'
+    'name': 'support.function.helper.ajax.cake'
+  }
+  {
+    'match': '\\b(read|append|write|get(Md5|Size|Ext|Name|Owner|Group|Folder|Chmod|FullPath)|create|exists|delete|writable|executable|readable|last(Access|Change))\\b'
+    'name': 'support.function.file.cake'
+  }
+  {
+    'match': '\\b(write)\\b'
+    'name': 'support.function.log.cake'
+  }
+  {
+    'match': '\\b(precision|toReadableSize|toPercentage)\\b'
+    'name': 'support.function.helper.number.cake'
+  }
+  {
+    'match': '\\b(startup|setAjax|is(Ajax|Xml|Rss|Atom|Post|Get|Delete|Mobile)|getAjaxVersion|setContent|get(Referer|ClientIP)|strip(WhiteSpace|Images|Scripts|All|tags)|accepts|prefers)\\b'
+    'name': 'support.function.component.requestHandler.cake'
+  }
+  {
+    'match': '\\b(write|read|del|delete|check|error|setFlash|flash|renew|valid)\\b'
+    'name': 'support.function.component.session.cake'
+  }
+  {
+    'match': '\\b(startup|blackHole|requirePost|requireAuth)\\b'
+    'name': 'support.function.component.security.cake'
+  }
+  {
+    'match': '\\b(paranoid|sql|html|cleanArray|cleanArrayR|cleanValue|formatColumns)\\b'
+    'name': 'support.function.component.sanitize.cake'
+  }
+  {
+    'match': '\\b(trim|fromString|nice|niceShort|isToday|daysAsSql|dayAsSql|isThisYear|wasYesterday|isTomorrow|toUnix|toAtom|toRSS|timeAgoInWords|relativeTime|wasWithinLast)\\b'
+    'name': 'support.function.helper.time.cake'
+  }
+  {
+    'match': '\\b(highlight|stripLinks|autoLinkUrls|autoLinkEmails|autoLink|truncate|excerpt|flay)\\b'
+    'name': 'support.function.helper.text.cake'
+  }
+  {
+    'match': '\\b(codeBlock|link|linkOut|escape(String|Script)|event|(cache|write)Events|includeScript|object)\\b'
+    'name': 'support.function.helper.javascript.cake'
+  }
+  {
+    'match': '\\b(findIn|cleanup|add|plus|totals|filter|walk|sprintf|extract|unique|makeUnique|joinWith|threaded|multi_search)\\b'
+    'name': 'support.function.neatArray.cake'
+  }
+  {
+    'match': '\\b(load(Models|PluginModels|View|Model|Controllers|PluginController)|listClasses|config|gendor|debug|aa|ha|a|e|low|up|r|pr|params|am|setUri|env|cache|clearCache|stripslashes_deep|countDim|LogError|fileExistsInPath|convertSlash)\\b'
+    'name': 'support.function.basics.cake'
+  }
+]
+'scopeName': 'source.php.cake'

@@ -1,0 +1,460 @@
+'.text.html.php.cake':
+  '$content_for_layout':
+    'prefix': 'cfl'
+    'body': '<?php echo \\$content_for_layout; ?>'
+  '$scripts_for_layout':
+    'prefix': 'sfl'
+    'body': '<?php echo \\$scripts_for_layout; ?>'
+  '$this->Form->checkbox()':
+    'prefix': 'check'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->checkbox(\'${1:Model}.${2:field}\'$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Form->create()':
+    'prefix': 'form'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->create(\'${1:Model}\'$2);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Form->create()...end()':
+    'prefix': 'form'
+    'body': '<?php echo \\$this->Form->create(\'${1:Model}\'$2); ?>\n\t$0\n<?php echo \\$this->Form->end($3); ?>'
+  '$this->Form->dateTime()':
+    'prefix': 'date'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->dateTime(\'${1:Model}.${2:field}\'$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Form->day()':
+    'prefix': 'day'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->day(\'${1:Model}.${2:field}\'$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Form->end()':
+    'prefix': 'form'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->end($1);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Form->error()':
+    'prefix': 'err'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->error(\'${1:Model}.${2:field}\'$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Form->file()':
+    'prefix': 'file'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->file(\'${1:Model}.${2:field}\'$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Form->hidden()':
+    'prefix': 'hid'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->hidden(\'${1:Model}.${2:field}\'$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Form->hour()':
+    'prefix': 'hour'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->hour(\'${1:Model}.${2:field}\'$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Form->input()':
+    'prefix': 'in'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->input(\'${1:Model}.${2:field}\'$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Form->label()':
+    'prefix': 'label'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->label(\'${1:Model}.${2:field}\'$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Form->meridian()':
+    'prefix': 'merid'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->meridian(\'${1:Model}.${2:field}\'$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Form->minute()':
+    'prefix': 'min'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->minute(\'${1:Model}.${2:field}\'$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Form->month()':
+    'prefix': 'month'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->month(\'${1:Model}.${2:field}\'$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Form->password()':
+    'prefix': 'pass'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->password(\'${1:Model}.${2:field}\'$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Form->radio()':
+    'prefix': 'radio'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->radio(\'${1:Model}.${2:field}\'$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Form->select()':
+    'prefix': 'select'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->select(\'${1:Model}.${2:field}\'$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Form->submit()':
+    'prefix': 'submit'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->submit(${1:\'${2:Submit}\'$3});`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Form->text()':
+    'prefix': 'text'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->text(\'${1:Model}.${2:field}\'$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Form->textarea()':
+    'prefix': 'textarea'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->textarea(\'${1:Model}.${2:field}\'$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Form->year()':
+    'prefix': 'year'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Form->year(\'${1:Model}.${2:field}\'$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Html->addCrumb()':
+    'prefix': 'addc'
+    'body': '<?php \\$this->Html->addCrumb(\'${1:CrumbName}\'${2:, \'${3:CrumbLink}\'}); ?>'
+  '$this->Html->charset()':
+    'prefix': 'char'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Html->charset($1);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Html->css()':
+    'prefix': 'css'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Html->css(array(\'${1:filename}\'$2)$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Html->div()':
+    'prefix': 'div'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Html->div($1);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Html->docType()':
+    'prefix': 'doc'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Html->doctype(\'${1:xhtml-strict}\');`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Html->getCrumbs()':
+    'prefix': 'getc'
+    'body': '<?php echo \\$this->Html->getCrumbs(${1:\'${2:«separator»}\'}); ?>'
+  '$this->Html->image()':
+    'prefix': 'img'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Html->image(\'${1:image.ext}\', array(\'alt\'=>\'${2:altText}\'$3));`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Html->link($this->Html->img(..))':
+    'prefix': 'imgl'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Html->link(\n\t\\$this->Html->image(\'${1:image.ext}\', array(\'alt\' => \'${2:altText}\'$3)),\n\t${4:array(\'controller\' => \'${5:controller}\', \'action\' => \'${6:action}\'$7)},\n\t${8:null}, ${9:null}, ${10:false}\n);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Html->link()':
+    'prefix': 'link'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Html->link(\'${1:text}\', ${2:array(\'controller\' => \'${3:controller}\', \'action\' => \'${4:action}\'$5)});`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Html->meta(\'atom\')':
+    'prefix': 'met'
+    'body': '<?php echo \\$this->Html->meta(\'atom\', ${1:\\$this->webroot(\'${2:atom.xml}\')}); ?>'
+  '$this->Html->meta(\'description\')':
+    'prefix': 'met'
+    'body': '<?php echo \\$this->Html->meta(\'description\', ${1:\'${2:your description here}\'}); ?>'
+  '$this->Html->meta(\'icon\')':
+    'prefix': 'met'
+    'body': '<?php echo \\$this->Html->meta(\'icon\', ${1:\\$this->webroot(\'${2:favicon.ico}\')}); ?>'
+  '$this->Html->meta(\'keywords\')':
+    'prefix': 'met'
+    'body': '<?php echo \\$this->Html->meta(\'keywords\', ${1:\'${2:your keywords here}\'}); ?>'
+  '$this->Html->meta(\'rss\')':
+    'prefix': 'met'
+    'body': '<?php echo \\$this->Html->meta(\'rss\', ${1:\\$this->webroot(\'${2:feed.rss}\')}); ?>'
+  '$this->Html->meta()':
+    'prefix': 'meta'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Html->meta(\'${1:type}\'$2);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Html->style()':
+    'prefix': 'style'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Html->style(${1:array($2)}$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Javascript->object()':
+    'prefix': 'jobj'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Javascript->object(${1:\\$data});`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Javascript->value()':
+    'prefix': 'jval'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Javascript->value(${1:\\$var});`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Paginator->counter()':
+    'prefix': 'pcount'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Paginator->counter($1);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Paginator->link()':
+    'prefix': 'plink'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Paginator->link(\'${1:\\title}\', array($2)$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Paginator->numbers()':
+    'prefix': 'pnum'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Paginator->numbers($1);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Html->script()':
+    'prefix': 'script'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Html->script(${1:array($2)}$3);`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`'
+  '$this->Html->scriptBlock()':
+    'prefix': 'scriptb'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Html->scriptBlock(${1:\\$script}{2:, array($3)});`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`'
+  '$this->Html->scriptEnd()':
+    'prefix': 'scripte'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`${1:echo }\\$this->Html->scriptEnd();`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`'
+  '$this->Html->scriptStart()':
+    'prefix': 'scripts'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`\\$this->Html->scriptStart(${1:array($2)});`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`'
+  '$this->Javascript->link()':
+    'prefix': 'jlink'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`\\$this->Javascript->link(\'${1:script}.js\'${2:, false});`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$title_for_layout':
+    'prefix': 'tfl'
+    'body': '<?php echo \\$title_for_layout; ?>'
+  '$this->Session->error()':
+    'prefix': 'serr'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Session->error();`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Session->flash()':
+    'prefix': 'sflash'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Session->flash(${2:\'${3:key}\'});`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  '$this->Session->read()':
+    'prefix': 'sread'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$this->Session->read(${2:\'${3:keyName}\'});`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`$0'
+  'echo $data[\'Model\'][\'field\']':
+    'prefix': 'echo'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`echo \\$${1:data}${2:[\'${3:Model}\']${4:[\'${5:field}\']}}$6;`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`'
+  'else':
+    'prefix': 'else'
+    'body': '<?php else: ?>\n\t$0  \t \n<?php endif; ?>'
+  'elseif':
+    'prefix': 'elseif'
+    'body': '<?php elseif (${1:\\$condition}): ?>\n\t$0 \n<?php endif; ?>'
+  'foreach':
+    'prefix': 'each'
+    'body': '<?php foreach (\\$${1:array} as \\$${2:key}=>\\$${3:value}): ?>\n\t$0  \t \n<?php endforeach; ?>'
+  'if':
+    'prefix': 'if'
+    'body': '<?php if (${1:\\$condition}): ?>\n\t$0  \t \n<?php endif; ?>'
+  '$this->element()':
+    'prefix': 'ren'
+    'body': '<?php echo \\$this->element(\'${1:element}\'$0); ?>'
+'.source.php.cake':
+  '$this->ModelName->deleteAll()':
+    'prefix': 'dela'
+    'body': '\\$this->${1:ModelName}->deleteAll(${2:\\$conditions}${3:, ${4:\\$cascade}});'
+  '$this->ModelName->field()':
+    'prefix': 'field'
+    'body': '\\$this->${1:ModelName}->field(${2:\'${3:name}\'}, ${4:\'conditions\'}, ${5:\'order\'});\n$0'
+  '$this->ModelName->find()':
+    'prefix': 'find'
+    'body': '\\$this->${1:ModelName}->$2find(${3:\'${4:all}\' ${5:, array(\n\t${6:\'conditions\' => ${7:\'${8}\'}}$0\n)}});\n'
+  '$this->ModelName->findAllBy<FieldName>':
+    'prefix': 'find'
+    'body': '\\$this->${1:ModelName}->findAllBy${2:FieldName(${3:\\$value}));\n$0'
+  '$this->ModelName->findBy<FieldName>':
+    'prefix': 'find'
+    'body': '\\$this->${1:ModelName}->findBy${2:FieldName(${3:\\$value}));\n$0'
+  '$this->ModelName->id = $id;':
+    'prefix': 'id='
+    'body': '\\$this->${1:ModelName}->id = ${2:\\$id};'
+  '$this->ModelName->save()':
+    'prefix': 'save'
+    'body': '\\$this->${1:ModelName}->save(${2:\\$this->data});'
+  '$this->ModelName->saveField()':
+    'prefix': 'savef'
+    'body': '\\$this->${1:ModelName}->saveField(${2:\'$3\'}, ${4:\\$fieldValue});'
+  '$this->ModelName->updateAll()':
+    'prefix': 'upa'
+    'body': '\\$this->${1:ModelName}->updateAll(${2:\\$fields}${3:, ${4:\\$conditions}});'
+  '$this->Session->check(\'Message.flash\')':
+    'prefix': 'scheck'
+    'body': '\\$this->Session->check(\'${1:Message}.${2:flash}\');$0'
+  '$this->Session->check()':
+    'prefix': 'scheck'
+    'body': '\\$this->Session->check(\'${1:Controller}.${2:key}\');$0'
+  '$this->Session->delete()':
+    'prefix': 'sdel'
+    'body': '\\$this->Session->delete(\'${1:Controller}.${2:key}\');$0'
+  '$this->Session->destroy()':
+    'prefix': 'sdes'
+    'body': '\\$this->Session->destroy();$0'
+  '$this->Session->error()':
+    'prefix': 'serr'
+    'body': '\\$this->Session->error();$0'
+  '$this->Session->id()':
+    'prefix': 'sid'
+    'body': '\\$this->Session->id();$0'
+  '$this->Session->read()':
+    'prefix': 'sread'
+    'body': '\\$this->Session->read(\'${1:Controller}.${2:key}\');$0'
+  '$this->Session->restore()':
+    'prefix': 'sres'
+    'body': '\\$this->Session->restore();$0'
+  'Controller::Session->setFlash()':
+    'prefix': 'flash'
+    'body': '\\$this->Session->setFlash(\'${1:the flash message}\');'
+  '$this->Session->setFlash()':
+    'prefix': 'sflash'
+    'body': '\\$this->Session->setFlash(${1:\'${2:Message}\'}$3);$0'
+  '$this->Session->valid()':
+    'prefix': 'svalid'
+    'body': '\\$this->Session->valid();$0'
+  '$this->Session->write()':
+    'prefix': 'swrite'
+    'body': '\\$this->Session->write(\'${1:Controller}.${2:key}\', \'${3:value}\');$0'
+  '$this->data':
+    'prefix': 'data'
+    'body': '\\$this->data'
+  'Controller::redirect(Controller::referer());':
+    'prefix': 'redref'
+    'body': '\\$this->redirect(\\$this->referer(${1:\'/\'}));'
+  'Controller::redirect()':
+    'prefix': 're'
+    'body': '\\$this->redirect(${1:array(\'controller\' => \'${2:controller}\', \'action\' => \'${3:action}\'$0)});'
+  'Controller::render()':
+    'prefix': 'ren'
+    'body': '\\$this->render(${1:\'${2:action}\'}$3);\n$0'
+  '$this->ModelName->delete()':
+    'prefix': 'del'
+    'body': '\\$this->${1:ModelName}->delete(${2:\\$id}${3:, ${4:\\$cascade}});'
+  'App::import()':
+    'prefix': 'app'
+    'body': 'App::import(\'${1:LibraryName}\', ${2:\'${3:ClassName}\'});\n$0'
+  'ClassRegistry::init()':
+    'prefix': 'cr'
+    'body': 'ClassRegistry::init(${1:\'${2:ModelName}\'}$3);\n$0'
+  'Component::beforeRedirect()':
+    'prefix': 'cbef'
+    'body': '/**\n * Called before Controller::redirect().\n *\n * @param object $controller Controller with components to beforeRedirect\n * @return void\n * @access public\n */\nfunction beforeRedirect(\\&$controller, \\$url, \\$status, \\$exit) {\n\t$1\n}'
+  'Component::initialize()':
+    'prefix': 'cinit'
+    'body': '/**\n * Called before the Controller::beforeFilter().\n *\n * @param object $controller Controller with components to initialize\n * @return void\n * @access public\n */\nfunction initialize(&\\$controller) {\n\t\\$this->controller = &\\$controller;\n\t$1\n}'
+  'Component::startup()':
+    'prefix': 'cstart'
+    'body': '/**\n * Called after the Controller::beforeFilter() and before the controller action\n *\n * @param object $controller Controller with components to startup\n * @return void\n * @access public\n */\nfunction startup(&\\$controller) {\n\t$1\n}'
+  'Configure::read':
+    'prefix': 'config'
+    'body': 'Configure::read(\'$0\')'
+  'Configure::write':
+    'prefix': 'config'
+    'body': 'Configure::write(\'$1\', $2);'
+  'Controller::beforeFilter()':
+    'prefix': 'before'
+    'body': '/**\n * Controller beforeFilter callback.\n * Called before the controller action. \n * \n * @return void\n */\nfunction beforeFilter() {\n\t$1\n}\n$0'
+  'Controller::afterFilter()':
+    'prefix': 'after'
+    'body': '/**\n * Controller afterFilter callback.\n * Called after the controller action is run and rendered.\n * \n * @return void\n */\nfunction afterFilter() {\n\t$1\n}\n$0'
+  'Controller::beforeRender()':
+    'prefix': 'before'
+    'body': '/**\n * Controller afterFilter callback.\n * Called after the controller action is run, but before the view is rendered.\n * \n * @return void\n */\nfunction beforeRender() {\n\t$1\n}\n$0'
+  'New Controller':
+    'prefix': 'control'
+    'body': '<?php\n/**\n * $1sController\n * \n * ${2:[Short Description]}\n *\n * @package ${3:default}\n * @author ${PHPDOC_AUTHOR:$TM_FULLNAME}\n * @version \\$Id\\$\n * @copyright ${PHPDOC_AUTHOR:$TM_ORGANIZATION_NAME}\n **/\n\nclass ${1:PluralModelName}sController extends AppController {\n\t/**\n\t * The name of this controller. Controller names are plural, named after the model they manipulate.\n\t *\n\t * @var string\n\t * @access public\n\t */\n\tvar \\$name = \'$1s\';\n\n\t/**\n\t * An array containing the names of helpers this controller uses. The array elements should\n\t * not contain the "Helper" part of the classname.\n\t *\n\t * @var mixed A single name as a string or a list of names as an array.\n\t * @access protected\n\t */\n\t${4:var \\$helpers = array(${5:\'Html\', \'Form\'});}\n\t\n\t/**\n\t * Array containing the names of components this controller uses. Component names\n\t * should not contain the "Component" portion of the classname.\n\t *\n\t * @var array\n\t * @access public\n\t */\n\tvar \\$components = array();\n\n\t/**\n\t * Called before the controller action.\n\t *\n\t * @access public\n\t */\n\tfunction beforeFilter() {\n\t}\n\n\t/**\n\t * Called after the controller action is run, but before the view is rendered.\n\t *\n\t * @access public\n\t */\n\tfunction beforeRender() {\n\t}\n\n\t/**\n\t * Called after the controller action is run and rendered.\n\t *\n\t * @access public\n\t */\n\tfunction afterFilter() {\n\t}\n\t\n\t/**\n\t * Index action\n\t *\n\t * @access public\n\t */\n\tfunction index() {\n\t\t\\$this->$1->recursive = 0;\n\t\t\\$this->set(\'${6:$1}s\', \\$this->paginate());\n\t}\n\t\n\t/**\n\t * View action\n\t *\n\t * @access public\n\t * @param integer \\$id ID of record\n\t */\n\tfunction view(\\$id = null) {\n\t\tif (!\\$id) {\n\t\t\t\\$this->Session->setFlash(__(\'Invalid $1\', true));\n\t\t\t\\$this->redirect(array(\'action\' => \'index\'));\n\t\t}\n\t\t\\$this->set(\'$6\', \\$this->$1->read(null, \\$id));\n\t}\n\t\n\t/**\n\t * Add action\n\t *\n\t * @access public\n\t */\n\tfunction add() {\n\t\tif (!empty(\\$this->data)) {\n\t\t\t\\$this->$1->create();\n\t\t\tif (\\$this->$1->save(\\$this->data)) {\n\t\t\t\t\\$this->Session->setFlash(__(\'The $1 has been saved\', true));\n\t\t\t\t\\$this->redirect(array(\'action\' => \'index\'));\n\t\t\t} else {\n\t\t\t\t\\$this->Session->setFlash(__(\'The $1 could not be saved. Please, try again.\', true));\n\t\t\t}\n\t\t}\n\t}\n\t\n\t/**\n\t * Edit action\n\t *\n\t * @access public\n\t * @param integer \\$id ID of record\n\t */\n\tfunction edit(\\$id = null) {\n\t\tif (!\\$id && empty(\\$this->data)) {\n\t\t\t\\$this->Session->setFlash(__(\'Invalid $1\', true));\n\t\t\t\\$this->redirect(array(\'action\' => \'index\'));\n\t\t}\n\t\tif (!empty(\\$this->data)) {\n\t\t\tif (\\$this->$1->save(\\$this->data)) {\n\t\t\t\t\\$this->Session->setFlash(__(\'The $1 has been saved\', true));\n\t\t\t\t\\$this->redirect(array(\'action\' => \'index\'));\n\t\t\t} else {\n\t\t\t\t\\$this->Session->setFlash(__(\'The $1 could not be saved. Please, try again.\', true));\n\t\t\t}\n\t\t}\n\t\tif (empty(\\$this->data)) {\n\t\t\t\\$this->data = \\$this->$1->read(null, \\$id);\n\t\t}\n\t}\n\n\t/**\n\t * Delete action\n\t *\n\t * @access public\n\t * @param integer \\$id ID of record\n\t */\n\tfunction delete(\\$id = null) {\n\t\tif (!\\$id) {\n\t\t\t\\$this->Session->setFlash(__(\'Invalid id for $1\', true));\n\t\t\t\\$this->redirect(array(\'action\'=>\'index\'));\n\t\t}\n\t\tif (\\$this->$1->delete(\\$id)) {\n\t\t\t\\$this->Session->setFlash(__(\'$1 deleted\', true));\n\t\t\t\\$this->redirect(array(\'action\'=>\'index\'));\n\t\t}\n\t\t\\$this->Session->setFlash(__(\'$1 was not deleted\', true));\n\t\t\\$this->redirect(array(\'action\' => \'index\'));\n\t}\n}\n?>'
+  'Dox Doc page':
+    'prefix': 'cdoc'
+    'body': '/**\n * ${1:Undocumented file}\n * \n * ${2:Short description}\n * \n * ${3:Long description}\n *\n * @package ${4:default}\n * @author ${5:$TM_FULLNAME}\n * @copyright `date +%Y` `echo $TM_ORGANIZATION_NAME`\n * @license $6\n * @date \\$LastChangedDate\\$\n * @version \\$Rev\\$\n **/\n$0'
+  'Dox Doc class':
+    'prefix': 'cdoc'
+    'body': '/**\n * ${1:undocumented class}\n *\n * @package ${2:default}\n * @author ${PHPDOC_AUTHOR:$TM_FULLNAME}$3\n * @date \\$LastChangedDate\\$\n * @version \\$Rev\\$\n **/\n$0'
+  'Model::afterDelete()':
+    'prefix': 'afterdelete'
+    'body': 'function afterDelete() {\n\t$1\n}'
+  'Model::afterFind()':
+    'prefix': 'afterfind'
+    'body': 'function afterFind(${1:\\$results}) {\n\t$2\n}'
+  'Model::afterSave()':
+    'prefix': 'aftersave'
+    'body': 'function afterSave(${1:\\$created}) {\n\t$2\n}'
+  'Model::beforeDelete()':
+    'prefix': 'beforedelete'
+    'body': 'function beforeDelete() {\n\t$1\n}'
+  'Model::beforeFind()':
+    'prefix': 'beforefind'
+    'body': 'function beforeFind(${1:\\$queryData}) {\n\t$2\n}'
+  'Model::beforeSave()':
+    'prefix': 'beforesave'
+    'body': 'function beforeSave() {\n\t$1\n}'
+  'Model::beforeValidate()':
+    'prefix': 'beforevalidate'
+    'body': 'function beforeValidate() {\n\t$1\n}'
+  'Model::onError()':
+    'prefix': 'onerror'
+    'body': 'function onError() {\n\t$1\n}'
+  'New Model':
+    'prefix': 'model'
+    'body': '<?php\n/**\n * $1 Model\n * \n * ${3:[Short Description]}\n *\n * @package ${2:default}\n * @author ${PHPDOC_AUTHOR:$TM_FULLNAME}\n * @version \\$Id\\$\n * @copyright ${PHPDOC_AUTHOR:$TM_ORGANIZATION_NAME}\n **/\nclass ${1:Singular} extends AppModel {\n\tvar \\$name = \'$1\';\n\t$0\n}\n?>'
+  'New Behavior':
+    'prefix': 'behave'
+    'body': '<?php\n/**\n * $1 Model Behavior\n * \n * [Short Description]\n *\n * @package ${2:default}\n * @author ${PHPDOC_AUTHOR:$TM_FULLNAME}\n * @version \\$Id\\$\n * @copyright ${PHPDOC_AUTHOR:$TM_ORGANIZATION_NAME}\n **/\nclass ${1:My}Behavior extends ModelBehavior {\n\n\t/**\n\t * Contains configuration settings for use with individual model objects.\n\t * Individual model settings should be stored as an associative array, \n\t * keyed off of the model name.\n\t *\n\t * @var array\n\t * @access public\n\t * @see Model::\\$alias\n\t */\n\tvar \\$settings = array($0);\n\n\t/**\n\t * Allows the mapping of preg-compatible regular expressions to public or\n\t * private methods in this class, where the array key is a /-delimited regular\n\t * expression, and the value is a class method.  Similar to the functionality of\n\t * the findBy* / findAllBy* magic methods.\n\t *\n\t * @var array\n\t * @access public\n\t */\n\tvar \\$mapMethods = array();\n\n\n\t/**\n\t * Initiate $1 Behavior\n\t *\n\t * @param object \\$model\n\t * @param array \\$config\n\t * @return void\n\t * @access public\n\t */\n\tfunction setup(&\\$model, \\$config = array()) {\n\n\t}\n\n\t/* -- All possible behavior callbacks have been stubbed out. Remove those you do not need. -- */\n\n\t/**\n\t * Before find callback\n\t *\n\t * @param object \\$model Model using this behavior\n\t * @param array \\$queryData Data used to execute this query, i.e. conditions, order, etc.\n\t * @return boolean True if the operation should continue, false if it should abort\n\t * @access public\n\t */\n\tfunction beforeFind(&\\$model, \\$query) { \n\t\treturn true;\n\t}\n\n\t/**\n\t * After find callback. Can be used to modify any results returned by find and findAll.\n\t *\n\t * @param object \\$model Model using this behavior\n\t * @param mixed \\$results The results of the find operation\n\t * @param boolean \\$primary Whether this model is being queried directly (vs. being queried as an association)\n\t * @return mixed Result of the find operation\n\t * @access public\n\t */\n\tfunction afterFind(&\\$model, \\$results, \\$primary) { \n\t\treturn \\$results;\n\t}\n\n\t/**\n\t * Before validate callback\n\t *\n\t * @param object \\$model Model using this behavior\n\t * @return boolean True if validate operation should continue, false to abort\n\t * @access public\n\t */\n\tfunction beforeValidate(&\\$model) { \n\t\treturn true;\n\t}\n\n\t/**\n\t * Before save callback\n\t *\n\t * @param object \\$model Model using this behavior\n\t * @return boolean True if the operation should continue, false if it should abort\n\t * @access public\n\t */\n\tfunction beforeSave(&\\$model) { \n\t\treturn true;\n\t}\n\n\t/**\n\t * After save callback\n\t *\n\t * @param object \\$model Model using this behavior\n\t * @param boolean \\$created True if this save created a new record\n\t * @access public\n\t * @return boolean True if the operation succeeded, false otherwise\n\t */\n\tfunction afterSave(&\\$model, \\$created) { \n\t\treturn true;\n\t}\n\n\t/**\n\t * Before delete callback\n\t *\n\t * @param object \\$model Model using this behavior\n\t * @param boolean \\$cascade If true records that depend on this record will also be deleted\n\t * @return boolean True if the operation should continue, false if it should abort\n\t * @access public\n\t */\n\tfunction beforeDelete(&\\$model, \\$cascade = true) { \n\t\treturn true;\n\t}\n\n\t/**\n\t * After delete callback\n\t *\n\t * @param object $model Model using this behavior\n\t * @access public\n\t */\n\tfunction afterDelete(&\\$model) {\n\n\t}\n\n\t/**\n\t * DataSource error callback\n\t *\n\t * @param object \\$model Model using this behavior\n\t * @param string \\$error Error generated in DataSource\n\t * @access public\n\t */\n\tfunction onError(&\\$model, \\$error) { \n\t\n\t}\n\n}'
+  'New Component':
+    'prefix': 'component'
+    'body': '<?php\n/**\n * $1Component\n * \n * [Short Description]\n *\n * @package ${2:default}\n * @author ${PHPDOC_AUTHOR:$TM_FULLNAME}\n * @version \\$Id\\$\n * @copyright ${PHPDOC_AUTHOR:$TM_ORGANIZATION_NAME}\n **/\n\nclass ${1:PluralModelName}Component extends Object {\n\n\t/**\n\t * Array containing the names of components this component uses. Component names\n\t * should not contain the "Component" portion of the classname.\n\t *\n\t * @var array\n\t * @access public\n\t */\n\tvar \\$components = array();\n\n\t/**\n\t * Called before the Controller::beforeFilter().\n\t *\n\t * @param object $controller A reference to the controller\n\t * @return void\n\t * @access public\n\t * @link http://book.cakephp.org/view/65/MVC-Class-Access-Within-Components\n\t */\n\tfunction initialize(&\\$controller, \\$settings = array()) {\n\t\tif (!isset(\\$this->__settings[\\$controller->name])) {\n\t\t\t\\$this->__settings[\\$controller->name] = \\$settings;\n\t\t}\n\t}\n\n\t/**\n\t * Called after the Controller::beforeFilter() and before the controller action\n\t *\n\t * @param object $controller A reference to the controller\n\t * @return void\n\t * @access public\n\t * @link http://book.cakephp.org/view/65/MVC-Class-Access-Within-Components\n\t */\n\tfunction startup(&\\$controller) {\n\t}\n\n\t/**\n\t * Called after the Controller::beforeRender(), after the view class is loaded, and before the\n\t * Controller::render()\n\t *\n\t * @param object $controller A reference to the controller\n\t * @return void\n\t * @access public\n\t */\n\tfunction beforeRender(&\\$controller) {\n\t}\n\n\t/**\n\t * Called after Controller::render() and before the output is printed to the browser.\n\t *\n\t * @param object $controller A reference to the controller\n\t * @return void\n\t * @access public\n\t */\n\tfunction shutdown(&\\$controller) {\n\t}\n\n\t/**\n\t * Called before Controller::redirect()\n\t *\n\t * @param object $controller A reference to the controller\n\t * @param mixed $url A string or array containing the redirect location\n\t * @access public\n\t */\n\tfunction beforeRedirect(&\\$controller, \\$url, \\$status = null, \\$exit = true) {\n\t}\n}\n?>'
+  'New Datasource':
+    'prefix': 'datasource'
+    'body': '<?php\n/**\n * $1 DataSource\n * \n * [Short Description]\n *\n * @package ${2:default}\n * @author ${PHPDOC_AUTHOR:$TM_FULLNAME}\n * @version \\$Id\\$\n * @copyright ${PHPDOC_AUTHOR:$TM_ORGANIZATION_NAME}\n **/\n\nclass ${1:Datasource}Source extends DataSource {\n\n\t/**\n\t * Array containing the names of components this component uses. Component names\n\t * should not contain the "Component" portion of the classname.\n\t *\n\t * @var array\n\t * @access public\n\t */\n\tvar \\$config = array();\n\t\n\tvar \\$_schema = array(\n\t\t\'tweets\' => array(\n\t\t\t\'id\' => array(\n\t\t\t\t\'type\' => \'integer\',\n\t\t\t\t\'null\' => true,\n\t\t\t\t\'key\' => \'primary\',\n\t\t\t\t\'length\' => 11,\n\t\t\t),\n\t\t\t\'text\' => array(\n\t\t\t\t\'type\' => \'string\',\n\t\t\t\t\'null\' => true,\n\t\t\t\t\'key\' => \'primary\',\n\t\t\t\t\'length\' => 140\n\t\t\t),\n\t\t\t\'status\' => array(\n\t\t\t\t\'type\' => \'string\',\n\t\t\t\t\'null\' => true,\n\t\t\t\t\'key\' => \'primary\',\n\t\t\t\t\'length\' => 140\n\t\t\t),\n\t\t)\n\t);\n\t\n\tfunction __construct(\\$config) {\n\t\t${3:\\$auth = "{\\$config[\'login\']}:{\\$config[\'password\']}";\n\t\t\\$this->connection = new HttpSocket(\n\t\t\t"http://{$auth}@twitter.com/"\n\t\t);}\n\t\tparent::__construct(\\$config);\n\t}\n\n\tfunction describe(\\$model) {\n\t \treturn \\$this->_schema[\'tweets\'];\n\t}\n\t\n\tfunction listSources() {\n\t\treturn array();\n\t}\n\t\n\tfunction create(\\$model, \\$fields = array(), \\$values = array()) {\n\t}\n\t\n\tfunction read(\\$model, \\$queryData = array()) {\n\t}\n\t\n\tfunction update(\\$model, \\$fields = array(), \\$values = array()) {\n\t}\n\t\n\tfunction delete(\\$model, \\$id = null) {\n\t}\n}'
+  'New Fixture':
+    'prefix': 'fixture'
+    'body': '<?php\nclass ${1:Article}Fixture extends CakeTestFixture { \n\tvar \\$name = \'${1:Article}\';\n\n\tvar \\$fields = array( \n\t\t${2:\'id\' => array(\'type\' => \'integer\', \'key\' => \'primary\'),\n\t\t\'created\' => \'datetime\', \n\t\t\'updated\' => \'datetime\',\n\t\t${3:\'title\' => array(\'type\' => \'string\', \'length\' => 255, \'null\' => false),}}$4\n\t);\n\n\tvar \\$records = array( \n\t\t${5:array (\'id\' => 1, \'title\' => \'First Article\', \'body\' => \'First Article Body\', \'published\' => \'1\', \'created\' => \'2007-03-18 10:39:23\', \'updated\' => \'2007-03-18 10:41:31\'), \n\t\tarray (\'id\' => 2, \'title\' => \'Second Article\', \'body\' => \'Second Article Body\', \'published\' => \'1\', \'created\' => \'2007-03-18 10:41:23\', \'updated\' => \'2007-03-18 10:43:31\'), \n\t\tarray (\'id\' => 3, \'title\' => \'Third Article\', \'body\' => \'Third Article Body\', \'published\' => \'1\', \'created\' => \'2007-03-18 10:43:23\', \'updated\' => \'2007-03-18 10:45:31\'),}\n\t); \n}'
+  'New Helper':
+    'prefix': 'help'
+    'body': '<?php\n/**\n * $1Helper\n * \n * [Short Description]\n *\n * @package ${2:default}\n * @author ${PHPDOC_AUTHOR:$TM_FULLNAME}\n * @version \\$Id\\$\n * @copyright ${PHPDOC_AUTHOR:$TM_ORGANIZATION_NAME}\n **/\n\nclass ${1:HelperName}Helper extends AppHelper {\n\n\t${3:/**\n\t * An array containing the names of helpers this controller uses. The array elements should\n\t * not contain the "Helper" part of the classname.\n\t *\n\t * @var mixed A single name as a string or a list of names as an array.\n\t * @access protected\n\t */\n\tvar \\$helpers = array(${4:\'Html\', \'Form\'});\n\n\t}${5:/**\n\t * Called after the controller action is run, but before the view is rendered.\n\t *\n\t * @access public\n\t */\n\tfunction beforeRender() {\n\t\t${6}\n\t\\}\n\t\n\t}${7}\n\n\t/**\n\t * After render callback.  afterRender is called after the view file is rendered\n\t * but before the layout has been rendered.\n\t *\n\t * @access public\n\t */\n\tfunction afterRender() {\n\t}\n\n\t/**\n\t * Before layout callback.  beforeLayout is called before the layout is rendered.\n\t *\n\t * @access public\n\t */\n\tfunction beforeLayout() {\n\t}\n\n\t/**\n\t * After layout callback.  afterLayout is called after the layout has rendered.\n\t *\n\t * @access public\n\t */\n\tfunction afterLayout() {\n\t}\n}'
+  'New Schema':
+    'prefix': 'sch'
+    'body': 'var \\$${1:table_name} = array(\n\t\'id\' => array(\'type\' => \'integer\', \'null\' => false, \'default\' => NULL, \'key\' => \'primary\'),$0\n\t\'created\' => array(\'type\' => \'datetime\', \'null\' => false),\n\t\'modified\' => array(\'type\' => \'datetime\', \'null\' => false),\n\t\'indexes\' => array(\'PRIMARY\' => array(\'column\' => \'id\', \'unique\' => 1))\n);\n'
+  'New Shell':
+    'prefix': 'shell'
+    'body': '<?php\n/**\n * $1Shell\n * \n * ${2:[Short Description]}\n *\n * @package ${3:default}\n * @author ${PHPDOC_AUTHOR:$TM_FULLNAME}\n * @version \\$Id\\$\n * @copyright ${PHPDOC_AUTHOR:$TM_ORGANIZATION_NAME}\n **/\n\nclass ${1:ShellName}Shell extends Shell {\n\n\t/**\n\t * An array containing the names of tasks this shell uses. The array elements should\n\t * not contain the "Shell" part of the classname.\n\t *\n\t * @var mixed A single name as a string or a list of names as an array.\n\t * @access protected\n\t */\n\t${4:var \\$tasks = array(${5});}\n\n\t/**\n\t * An array containing the names of models this shell uses.\n\t *\n\t * @var mixed A single name as a string or a list of names as an array.\n\t * @access protected\n\t */\n\t${6:var \\$uses = array(${7});}\t\n\n\t/**\n\t * Main action\n\t *\n\t * @access public\n\t */\n\tpublic function main() {\n\t\t${8}\n\t}\n\n}\n?>'
+  'Schema Column':
+    'prefix': 'sch'
+    'body': '\'${1:column}\' => array(\'type\' => \'${2:string/text/integer/float/datetime/timestamp/time/date/binary/boolean}\'${3:, \'null\' => ${4:false}}${5:, \'length\' => ${6:255}}${7:, \'key\' => \'unique\'}),'
+  'Unique Index':
+    'prefix': 'sch'
+    'body': '\'${1:column_name}\' => array(\'column\' => \'${1:column_name}\', \'unique\' => 1)\n'
+  'Validation Array':
+    'prefix': 'val'
+    'body': 'var \\$validate = array(\n\t\'${1:field_name}\' => array(\n\t\t\'${2:ruleAlias}\' => array(\n\t\t\t\'rule\' => \'${3:ruleName}\',\n\t\t\t\'message\' => \'${4:Please enter a valid ${1/_/ /g}}.\',${5:\n\t\t\t\'allowEmpty\' => ${6:true},}\n\t\t),$0\n\t),\n);'
+  'Validation Field':
+    'prefix': 'val'
+    'body': '\'${1:field_name}\' => array(\n\t\'${2:ruleAlias}\'=>array(\n\t\t\'rule\' => \'${3:ruleName}\',\n\t\t\'message\' => \'${4:Please enter a valid ${1/_/ /g}}.\',${5:\n\t\t\'allowEmpty\' => ${6:true},}\n\t),$0\n),'
+  'Validation Rule':
+    'prefix': 'val'
+    'body': '\'${1:ruleAlias}\'=>array(\n\t\'rule\' => \'${2:ruleName}\',\n\t\'message\' => \'${4:Please enter a valid ${3:XX}}.\',${5:\n\t\'allowEmpty\' => ${6:true},}\n),'
+  'function':
+    'prefix': 'funct'
+    'body': '/**\n * ${4:undocumented function}\n *\n * ${5:function description} \n *\n * ${6:@param ${7:string} ${8:\\$var} ${9:description}  } \n * @return ${10:void}\n * @author ${PHPDOC_AUTHOR:$TM_FULLNAME}$11\n **/\n$1function $2($3) {\n\t$0\n}'
+  'var $actsAs':
+    'prefix': 'act'
+    'body': 'var \\$actsAs = array(\n\t\'${1:BehaviorName}\'${2: => ${3:ConfigForBehavior}},\n);'
+  'var $belongsTo':
+    'prefix': 'bt'
+    'body': 'var \\$belongsTo = array(\n\t\'${1:Model}\'${2: => array(\n\t\t${3:\'className\' => \'${4:${1:ModelClassName}}\',}\n\t\t${5:\'foreignKey\' => \'${6:foreign_key_field}\',}\n\t)},\n);'
+  'var $hasAndBelongsToMany':
+    'prefix': 'habtm'
+    'body': 'var \\$hasAndBelongsToMany = array(\n\t\'${1:Model}\'${2: => array(\n\t\t${3:\'className\' => \'${4:${1:ModelClassName}}\',}\n\t\t${5:\'foreignKey\' => \'${6:foreign_key_field}\',}\n\t)},\n);'
+  'var $hasMany':
+    'prefix': 'hm'
+    'body': 'var \\$hasMany = array(\n\t\'${1:Model}\'${2: => array(\n\t\t${3:\'className\' => \'${4:${1:ModelClassName}}\',}\n\t\t${5:\'foreignKey\' => \'${6:foreign_key_field}\',}\n\t)},\n);'
+  'var $hasOne':
+    'prefix': 'ho'
+    'body': 'var \\$hasOne = array(\n\t\'${1:Model}\'${2: => array(\n\t\t${3:\'className\' => \'${4:${1:ModelClassName}}\',}\n\t\t${5:\'foreignKey\' => \'${6:foreign_key_field}\',}\n\t)},\n);'
+  'var $useTable':
+    'prefix': 'use'
+    'body': 'var \\$useTable = ${1:\'${2:table_name}\'};'
+  'var $validate':
+    'prefix': 'val'
+    'body': 'var \\$validate = array(\n\t$1\n);'
+'.source.php':
+  '$this->assertEqual()':
+    'prefix': 'assertE'
+    'body': '\\$this->assertEqual(${1:\\$result}, ${2:\\$expected});\n$0'
+  '$this->assertFalse()':
+    'prefix': 'assertF'
+    'body': '\\$this->assertFalse(${1:\\$result});\n$0'
+  '$this->assertPattern()':
+    'prefix': 'assertP'
+    'body': '\\$this->assertPattern(${1:\'/${2:pattern}/\'}, ${3:\\$result});\n$0'
+  '$this->assertTrue()':
+    'prefix': 'assertT'
+    'body': '\\$this->assertTrue(${1:\\$result});\n$0'
+'.source.php.cake, .text.html.php.cake':
+  'Controller::set()':
+    'prefix': 'set'
+    'body': '\\$this->set(\'${1:var}\', \\$${2:$1});'
+  'debug()':
+    'prefix': 'de'
+    'body': 'debug(\\$${1:data});'
+  'requestAction':
+    'prefix': 'ra'
+    'body': '\\$this->requestAction(array(\'controller\' => \'${1:controller}\', \'action\' => \'${2:action}\'$0));'
+'.text.html.php.cake .source.php':
+  'Inflector::camelize(…)':
+    'prefix': 'inf'
+    'body': 'Inflector::camelize(${1:\\$word})'
+  'Inflector::classify(…)':
+    'prefix': 'inf'
+    'body': 'Inflector::classify(${1:\\$word})'
+  'Inflector::humanize(…)':
+    'prefix': 'inf'
+    'body': 'Inflector::humanize(${1:\\$word})'
+  'Inflector::pluralize(…)':
+    'prefix': 'inf'
+    'body': 'Inflector::pluralize(${1:\\$word})'
+  'Inflector::singularize(…)':
+    'prefix': 'inf'
+    'body': 'Inflector::singularize(${1:\\$word})'
+  'Inflector::slug(…)':
+    'prefix': 'inf'
+    'body': 'Inflector::slug(${1:\\$word})'
+  'Inflector::tabelize(…)':
+    'prefix': 'inf'
+    'body': 'Inflector::tabelize(${1:\\$word})'
+  'Inflector::underscore(…)':
+    'prefix': 'inf'
+    'body': 'Inflector::underscore(${1:\\$word})'
+  'Inflector::variable(…)':
+    'prefix': 'inf'
+    'body': 'Inflector::variable(${1:\\$word})'
+'.text.html.php.cake, .source.php':
+  'Set::insert()':
+    'prefix': 'Set'
+    'body': 'Set::insert(${1:\\$list}, ${2:\\$path}${3:, ${4:\\$data = null}})'
+  'Set::sort()':
+    'prefix': 'Set'
+    'body': 'Set::sort(${1:\\$data}, ${2:\\$path}, ${4:\\$dir}})'
+  '__()':
+    'prefix': '__'
+    'body': '`\nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \'<?php \'\nfi\n\n`__(\'${1}\'${2:, true});`\n \nif [[ $TM_SCOPE != *source.php* ]]\nthen\n        printf \' ?>\'\nfi\n`'
+  'var $layout;':
+    'prefix': 'lay'
+    'body': 'var \\$layout = ${1:\'$2\'};'
+'.text.html':
+  'else (telse)':
+    'prefix': 'telse'
+    'body': '<?php else: ?>\n\t${0:# code...}  \t \n<?php endif; ?>'
+  'elseif (telseif)':
+    'prefix': 'telseif'
+    'body': '<?php elseif (\\$${1:condition}): ?>\n\t${0:# code...}  \t \n<?php endif; ?>'
+  'if (tif)':
+    'prefix': 'tif'
+    'body': '<?php if (\\$${1:condition}): ?>\n\t${0:# code...}  \t \n<?php endif; ?>'
